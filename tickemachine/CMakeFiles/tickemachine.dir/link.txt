@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Werror -std=c++14   CMakeFiles/tickemachine.dir/src/TicketMachine.cpp.o CMakeFiles/tickemachine.dir/src/main.cpp.o  -o tickemachine 

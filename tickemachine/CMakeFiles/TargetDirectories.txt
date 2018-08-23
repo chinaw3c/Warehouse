@@ -1,0 +1,3 @@
+/home/liuaotian/tickemachine/CMakeFiles/rebuild_cache.dir
+/home/liuaotian/tickemachine/CMakeFiles/tickemachine.dir
+/home/liuaotian/tickemachine/CMakeFiles/edit_cache.dir

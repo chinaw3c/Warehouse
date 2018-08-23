@@ -1,0 +1,3 @@
+/home/liuaotian/CODE/Warehouse/opencvdemo/CMakeFiles/rebuild_cache.dir
+/home/liuaotian/CODE/Warehouse/opencvdemo/CMakeFiles/opencv.dir
+/home/liuaotian/CODE/Warehouse/opencvdemo/CMakeFiles/edit_cache.dir
