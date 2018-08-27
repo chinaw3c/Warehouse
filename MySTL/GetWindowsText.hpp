@@ -36,3 +36,27 @@ private:
 		return TRUE;
 	}
 };
+
+int hidewindow(HWND hwnd)
+{
+	SetWindowPos(hwnd, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_HIDEWINDOW | SWP_NOSIZE | SWP_NOMOVE);
+	return UpdateWindow(hwnd);
+}
+
+int showwindow(HWND hwnd)
+{
+	SetWindowPos(hwnd, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_SHOWWINDOW | SWP_NOSIZE | SWP_NOMOVE);
+	return UpdateWindow(hwnd);
+}
+
+int setwindowup(HWND hwnd)
+{
+	SetWindowPos(hwnd, HWND_TOPMOST, 1, 1, 0, 0, SWP_SHOWWINDOW | SWP_NOSIZE | SWP_NOMOVE);
+	return UpdateWindow(hwnd);
+}
+
+int unsetwindowup(HWND hwnd)
+{
+	SetWindowPos(hwnd, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_SHOWWINDOW | SWP_NOSIZE | SWP_NOMOVE);
+	return UpdateWindow(hwnd);
+}
