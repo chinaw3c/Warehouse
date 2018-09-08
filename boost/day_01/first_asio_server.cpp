@@ -23,14 +23,13 @@ int main(void)
 {
     try{
         boost::asio::io_service io_service;
-        tcp::acceptor acceptor(io_service, tcp::endpoint(tcp::v4(), 13));
-
+        tcp::acceptor acceptor(io_service, tcp::endpoint(tcp::v4(), 23333));
+        
         while (true){
             tcp::socket socket(io_service);
             acceptor.accept(socket);
-
-            std::string message = make_daytime_string();
-
+            //std::string message = make_daytime_string();
+            std::string message("我已收到消息！\n");
             boost::system::error_code ignored_error;
             boost::asio::write(socket, boost::asio::buffer(message), ignored_error);
         }
