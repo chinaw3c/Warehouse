@@ -28,7 +28,8 @@ def main():
 
     for ln in ln_list:
         # 执行系统命令创建软链接
-        os.system("ln -s {}.framework ../include/{}".format(ln, ln))
+        os.system("rm -rf ../include/{}".format(ln))
+        os.system("ln -s ../lib/{}.framework/Headers/ ../include/{}".format(ln, ln))
         print("创建{}软链接成功".format(ln))
         
 
